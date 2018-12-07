@@ -1,4 +1,4 @@
-package com.fenghaha.demo_class.activities;
+package com.fenghaha.demo_class.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -11,7 +11,6 @@
         android:layout_marginTop="10dp"
         android:gravity="left"
         />
-
     <ImageView
         android:id="@+id/dog_image"
         android:layout_width="wrap_content"

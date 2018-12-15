@@ -1,15 +1,12 @@
 package com.fenghaha.demo_class.DataBean;
 
-/**
- * Created by FengHaHa on2018/12/7 0007 22:16
- */
+
 public class Status {
     private int authorAvatarResId;
     private String authorName;
     private String title;
     private String content;
     private String updateTime;
-
 
     public int getAuthorAvatarResId() {
         return authorAvatarResId;

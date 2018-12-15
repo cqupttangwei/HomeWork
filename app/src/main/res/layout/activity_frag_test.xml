@@ -9,16 +9,70 @@
         android:id="@+id/lay_title"
         layout="@layout/title_layout" />
 
-   <LinearLayout
-       android:layout_below="@id/lay_title"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="horizontal">
-       <fragment
-           android:id="@+id/simple_fragment"
-           android:layout_width="0dp"
-           android:layout_height="match_parent"
-           android:layout_weight="1"
-           android:name="com.fenghaha.demo_class.fragment.SimpleFragment1" />
-   </LinearLayout>
+    <FrameLayout
+        android:id="@+id/lay_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/vi_line"
+        android:layout_below="@id/lay_title" />
+
+    <View
+        android:id="@+id/vi_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/lay_bottom"
+        android:background="#a7a6a6" />
+
+    <LinearLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="大锤学姐"
+            android:textColor="#9900ff"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/btn_1"
+            android:text="里脊"
+            android:textColor="#0aed0a"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/btn_2"
+            android:text="清夏学长"
+            android:textColor="#c6c3c3"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/btn_3"
+            android:text="黄师姐"
+            android:textColor="#f7bc04"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
 </RelativeLayout>
